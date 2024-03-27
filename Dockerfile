@@ -4,6 +4,9 @@ FROM $IMAGE
 
 WORKDIR /home/irisowner/dev/
 
+COPY /xml_input .
+COPY /xml_output .
+
 ARG TESTS=0
 ARG MODULE="interoperability-sample"
 ARG NAMESPACE="USER"
