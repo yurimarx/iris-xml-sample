@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    hostname: xml-sample
+    container_name: iris-xml-sample
     restart: always
     command: --check-caps false --ISCAgent false
     ports:
